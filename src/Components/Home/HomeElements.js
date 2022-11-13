@@ -7,6 +7,3 @@ export const Homepage = styled.div`
 export const Collections = styled.div`
     
 `;
-
-export const Footer = styled.div`
-`;

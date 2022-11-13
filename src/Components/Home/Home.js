@@ -1,7 +1,8 @@
 import React from 'react';
 import Info from './Info/Info';
 import SlideShow from './SlideShow/SlideShow';
-import {Homepage, Collections, Footer} from './HomeElements'
+import Footer from '../Footer/Footer'
+import {Homepage, Collections} from './HomeElements'
 
 function Home() {
 
@@ -9,11 +10,11 @@ function Home() {
     <Homepage>
         <SlideShow />
         <Info />
+        <hr color='grey'/>
         <Collections>
         
         </Collections>
-        <Footer>
-        </Footer>
+        <Footer />
     </Homepage>
     
   )
