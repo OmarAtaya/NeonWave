@@ -50,6 +50,7 @@ export const FormField = styled.input`
     border: 0.1px solid rgb(0,0,0,0.1px);
     padding: 12px;
     margin: 20px 0px;
+    color: white;
     ::placeholder{
         color: white;
     } 
@@ -71,8 +72,10 @@ export const Title = styled.h3`
     margin: 50px 0px 30px 0px;
 `;
 
-export const PageLink = styled.a`
+export const PageLink = styled.p`
     margin: 10px 0px;
+    color: white;
+    text-decoration: underline;
 
 `;
 
@@ -80,5 +83,5 @@ export const Text = styled.p`
 `;
 
 export const Icon = styled(AiOutlineInstagram)`
-    width: 41px;
+    width: 70px;
 `;

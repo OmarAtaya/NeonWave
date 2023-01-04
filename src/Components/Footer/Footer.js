@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import 
 {FooterArea, 
  FormLabel,
@@ -18,16 +19,26 @@ function Footer() {
         <Form>
             <Title>JOIN OUR FAMILY!</Title>
             <FormLabel>Sign up for exclusive offers, promos and product launches! We promise we won't send you lots of emails, only the good stuff.</FormLabel>
-            <FormField placeholder="Enter your email address"/>
+            <FormField type="email" placeholder="Enter your email address" required/>
             <FormButton>SUBSCRIBE</FormButton>
         </Form>
         <Quick>
             <Title>Quick Links</Title>
-            <PageLink>Contact Us</PageLink>
-            <PageLink>Fonts/Product/Size Guide</PageLink>
-            <PageLink>FAQs</PageLink>
-            <PageLink>Size Guide</PageLink>
-            <PageLink>Shipping/Returns</PageLink>
+            <Link to="/contact-us">
+              <PageLink>Contact Us</PageLink>
+            </Link>
+            <Link to="/fonts-product-size-guide">
+              <PageLink>Fonts/Product/Size Guide</PageLink>
+            </Link>
+            <Link to="/faqs">
+              <PageLink>FAQs</PageLink>
+            </Link>
+            <Link to="/size-guide">
+              <PageLink>Size Guide</PageLink>
+            </Link>
+            <Link to="/shipping-returns">
+              <PageLink>Shipping/Returns</PageLink>
+            </Link>
         </Quick>
         <Connect>
             <Title>Stay Connected</Title>
